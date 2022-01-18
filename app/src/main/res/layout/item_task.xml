@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:gravity="center"
+    android:background="@drawable/border"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="186dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="20dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@color/todoListPrimary"-->
+<!--        >-->
+
+        <TextView
+            android:id="@+id/dash_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Judul Todo List"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="16dp"
+            android:textColor="@color/appBar" />
+    <TextView
+        android:id="@+id/dash_task"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:text="Lorem Ipsum"
+        android:fontFamily="@font/poppinsmedium"/>
+
+
+        <LinearLayout
+            android:id="@+id/delete_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:id="@+id/icon_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/textTitle"/>
+
+
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>
